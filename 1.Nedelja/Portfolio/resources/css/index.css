@@ -69,7 +69,8 @@ header {
     color: #1544c0;
     line-height: 0;
     text-transform: uppercase;
-    letter-spacing: 0.12em;   
+    letter-spacing: 0.12em;
+    font-size: 1.3em;   
 }
 .section-left p {
     font-size: 1vw;
@@ -121,6 +122,33 @@ button:hover {
 /*----------Foooter-------------*/
 footer {
     width: 100vw;
-    height: 30vh;
-    background: linear-gradient(72deg, rgba(185,185,185,1) 0%, rgba(228,228,228,1) 37%, rgba(255,255,255,1) 60%);
+    height: 60vh;
+    background: linear-gradient(320deg, rgba(185,185,185,1) 0%, rgba(228,228,228,1) 37%, rgba(255,255,255,1) 60%);
+    text-align: center;
+    padding-top: 100px;
+}
+footer h1 {
+    font-size: 3vw;
+}
+footer p {
+    font-size: 1.6em;
+    color: rgb(44, 43, 43);
+    padding-top: 10px;
+}
+footer ul {
+    padding-left: 0px;
+}
+footer ul li {
+    display:inline-block;
+    text-decoration: none;
+    padding-top: 30px;
+    padding-right: 5px;
+}
+footer a {
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+}
+footer a:hover {
+    color: #1544c0;
 }
