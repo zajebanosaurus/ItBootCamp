@@ -11,35 +11,45 @@
 
 </head>
 <body>
-    <header class="main-header">
-        <div class="logo">
-			<h1>Slobodan Kocić</h1>
-		</div>
-		<div class="background"></div>
-       
-        <nav>
-            
+    <!------------Header------------->
+    <header>
+        <nav class="nav-bar">
+            <a href="#who">Who</a>
+            <a href="#work">Work</a>
+            <a href="#contact">Contact</a>
         </nav>
-    </header>
-    <main>
-        <div class="test">
-            <h2>Neki naslov</h2>
-            <p id="prviparagraf">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis iure eos quis delectus accusamus labore architecto maiores. Cupiditate vel dicta, soluta enim et velit, maxime accusantium qui quos dignissimos, nostrum libero? Odio iusto explicabo enim culpa nisi perspiciatis fugiat repellat reprehenderit tempore, inventore fuga, ducimus aspernatur temporibus, quo dicta assumenda nulla eligendi repudiandae voluptatem. Excepturi non corrupti omnis doloremque deleniti.</p>
-            <p id="drugiparagraf">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis, officia earum? Voluptatum voluptatem unde at earum architecto aperiam quae consequuntur tempora in, nostrum quis ducimus voluptate harum deserunt saepe itaque quidem impedit. Vitae magni doloremque fugit aliquam quisquam asperiores aperiam? Quod, accusantium et? Culpa necessitatibus excepturi et eligendi tempora perspiciatis.</h2>
-                <ul>
-                    <li>Lorem, ipsum.</li>
-                    <li>Lorem, ipsum.</li>
-                    <li>Lorem, ipsum.</li>
-                        <ol>
-                            <li>Lorem, ipsum.</li>
-                            <li>Lorem, ipsum.</li>
-                            <li>Lorem, ipsum.</li>
-                        </ol>
-
-                </ul>
+        <div class="main-header">
+            <h1>Nerd Alert!</h1>
         </div>
+       
+    </header>
+     <!-----------Main-------------->
+    <main>
+        <section id="who">
+            <div class="section-left">
+                <h3>Slobodan Kocić</h3>
+                <h1>Coder<span style="font-size: 22px; color: black">and awkward dancer.</span></h1>
+                <p>A Front End Web Developer who focuses on writing clean, elegant and effcient code.</p>
+                <ul>
+                    <li><a href="mailto:mr.slobodan@hotmail.rs"><img src="/resources/images/mail.png" alt="mail" width="22px"></a></li>
+                    <li><a href="#"><img src="/resources/images/twitter.png" alt="twitter" width="22px"></a></li>
+                    <li><a href="#"><img src="/resources/images/linkedin.png" alt="linkedin" width="20px"></a></li>
+                </ul>
+            </div>
+            <div class="section-right">
+                <img src="/resources/images/laptop.gif" alt="laptop" width="600px">
+            </div>
+        </section>
+        <section id="work">
+            <h1>Recent</h1>
+            <h1>Work</h1>
+            <button class="recent-work" onclick="location.href='https://github.com/zajebanosaurus';" >GitHub Page</button>
+        </section>
     </main>
-    <footer>
+    <!----------Footer------------->
+    <footer id="contact">
+        <p>Slobodan Kocić</p>
 
     </footer>
+
 </body>
