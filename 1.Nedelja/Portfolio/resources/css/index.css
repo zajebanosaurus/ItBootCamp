@@ -20,6 +20,13 @@ header {
     text-align: center;
     font-weight: bold;
 }
+.nav-bar ul {
+    padding-left: 0;
+}
+.nav-bar ul > li{
+    display:inline-block;
+    text-decoration: none;
+}
 .nav-bar a {
     text-decoration: none;
     color: black;
@@ -29,14 +36,13 @@ header {
     background-color: #fff55a;
 }
 .main-header {
-    /* color: #fff55a; */
     color: #f55e3c;
-    font-size: 7vh;
+    font-size: 9vh;
     font-family: "Unica One", cursive;
     width: 50%;
     text-align: center;
     margin: auto;
-    padding-top: 15vh;
+    padding-top: 5vh;
 }
 /* -------------- Main ----------------- */
 #who {
@@ -49,47 +55,54 @@ header {
 }
 .section-left {
     flex: 1;
-    margin-left: 300px;
-    margin-top: 270px;
+    margin-left: 15vw;
+    margin-top: 20vh;
     flex-grow: 4
     
 }
 .section-left h1 {
     font-size: 6vw;
     color: #f55e3c;
-    padding-bottom: 0;
     line-height: 0;
-}
-.section-left h2 {
-    line-height: 0;
-    font-size: 1.4vw;
-    padding-top: 30px;
 }
 .section-left h3 {
     color: #1544c0;
     line-height: 0;
     text-transform: uppercase;
     letter-spacing: 0.12em;
-    font-size: 1.3em;   
+    font-size: 1.4em;
+    margin-bottom: -50px;
+    padding-left: 10px;
 }
 .section-left p {
-    font-size: 1vw;
+    font-size: 1.2em;
     color: rgb(44, 43, 43);
-    line-height: 1.2em;
+    line-height: 1.5em;
     padding-right: 250px;
+    margin-top: -50px;
+}
+.second-paragraph {
+    padding-top: 80px;
 }
 .section-left ul {
     padding-left: 0px;
+    padding-top: 20px;
 }
 .section-left ul > li {
     display:inline-block;
     padding: 5px;
     text-decoration: none;
 }
+.section-left a {
+    color: black;
+}
+.section-left a:hover {
+    color: #1544c0;
+}
 .section-right{
     flex: 2;
-    margin-right: 200px;
-    margin-top: 220px;
+    margin-right: 10vw;
+    margin-top: 20vh;
 }
 #work {
     width: 100vw;
@@ -119,7 +132,7 @@ button:hover {
     color: white;
     background-color: #f55e3c;
 }
-/*----------Foooter-------------*/
+/*--------------Foooter---------------*/
 footer {
     width: 100vw;
     height: 60vh;
@@ -138,7 +151,7 @@ footer p {
 footer ul {
     padding-left: 0px;
 }
-footer ul li {
+footer ul > li {
     display:inline-block;
     text-decoration: none;
     padding-top: 30px;
