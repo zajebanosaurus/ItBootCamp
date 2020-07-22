@@ -11,8 +11,10 @@ let b = 4
         console.log("Proizvod je: " + proizvod)
     let kolicnik = a / b
         console.log("Količnik je: " + kolicnik)
-    let ostatak = a % b;
+    let ostatak = a % b
         console.log("Ostatak brojeva je: " + ostatak)
+    let stepen = Math.pow(a,b)
+        console.log("Stepen brojeva je: " + stepen)
 }    
 // Skraćena varijant
 {
@@ -20,7 +22,8 @@ let b = 4
     let razlika = a - b
     let proizvod = a * b
     let kolicnik = a / b
-    let ostatak = a % b;
+    let ostatak = a % b
+    let stepen = Math.pow(a,b)
 
-    console.log(zbir, razlika, proizvod, kolicnik, ostatak)
+    console.log(`zbir brojeva je: ${zbir}, razlika brojeva je: ${razlika}, proizvod brojeva je: ${proizvod}, količnik brojeva je: ${kolicnik}, ostatak brojeva je: ${ostatak}, stepen brojeva je: ${stepen}`)
 }
