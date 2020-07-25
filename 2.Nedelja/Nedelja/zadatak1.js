@@ -5,6 +5,6 @@ let povrsina = Math.pow(precnik / 2,2) * Math.PI
 
 let cenaPoCm = cena / povrsina
 
-console.log(cenaPoCm)
+console.log(`Cena pice po cm2 iznosi: ${cenaPoCm}`)
 
 

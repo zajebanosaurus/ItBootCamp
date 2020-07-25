@@ -2,17 +2,10 @@
 
 {
     let N = 5
-    let piramida = ''
+    let red = ''
 
-    piramida= '#'.repeat(N - 4)
-    console.log(piramida)
-    piramida = '#'.repeat(N - 3)
-    console.log(piramida)
-    piramida = '#'.repeat(N - 2)
-    console.log(piramida)
-    piramida = '#'.repeat(N - 1)
-    console.log(piramida)
-    piramida = '#'.repeat(N)
-    console.log(piramida)
-
+    for(let i = 1; i <= N; i++){
+        red = '#'.repeat(i) + ' '.repeat(N - i)
+        console.log(red)
+    }
 }

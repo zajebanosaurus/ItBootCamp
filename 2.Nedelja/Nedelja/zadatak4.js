@@ -2,26 +2,10 @@
 
 {
     let N = 5
-    let piramida = ''
-    let prazno = ''
+    let red = ''
 
-    piramida = '#'.repeat(N - 4)
-    prazno = ' '.repeat(N)
-    console.log(prazno, piramida)
-
-    piramida = '#'.repeat(N - 3)
-    prazno = ' '.repeat(N - 1)
-    console.log(prazno, piramida)
-
-    piramida = '#'.repeat(N - 2)
-    prazno = ' '.repeat(N - 2)
-    console.log(prazno, piramida)
-
-    piramida = '#'.repeat(N - 1)
-    prazno = ' '.repeat(N - 3)
-    console.log(prazno, piramida)
-
-    piramida = '#'.repeat(N)
-    prazno = ' '.repeat(N - 4)
-    console.log(prazno, piramida)
+    for(i = 1; i <= N; i++){
+        red = ' '.repeat(N - i) + '#'.repeat(i)
+        console.log(red)
+    }
 }
