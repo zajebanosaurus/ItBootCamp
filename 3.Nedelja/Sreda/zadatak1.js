@@ -1,7 +1,7 @@
 // Написати функцију која враћа максимум од 3 броја (Параметри функције су 3 броја)
 
 let n1 = 76
-let n2 = 10
+let n2 = 100
 let n3 = -34
 let max = 0
 
@@ -15,6 +15,5 @@ function maxOfNumbers(n1,n2,n3){
     }
     return max
 }
-maxOfNumbers(n1,n2,n3)
 
-console.log(`Maksimum od 3 broja je: ${max}`)
+console.log(`Maksimum od 3 broja je: ${maxOfNumbers(n1,n2,n3)}`)

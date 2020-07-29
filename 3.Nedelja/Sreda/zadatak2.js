@@ -11,5 +11,5 @@ function pizza(poluprecnik, cena){
     return cenaPoCm2 
     
 }
-pizza(poluprecnik, cena)
-console.log(`Cena po cm2 iznosi: ${cenaPoCm2}`)
+
+console.log(`Cena po cm2 iznosi: ${pizza(poluprecnik, cena)}`)
