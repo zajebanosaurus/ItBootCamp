@@ -64,10 +64,18 @@ pokemoni.sort((a,b) => a.karakteristike.napad - b.karakteristike.napad)
 
 //------------------- POBEDNIK ---------------------------- 
 
+let obj = {}
+pokemoni.map(el => {
+    let jacina = 0
 
-button2.addEventListener('click', () =>{
+    if(el.karakteristike.napad >= jacina){
+        jacina = el.karakteristike.napad
+        obj = el
+    }
+})
+
     const pokemonPobednik = document.createElement('div')
-    pokemonPobednik.className = 'prikaz-pobednik'
+    pokemonPobednik.className = 'bez-prikaza'
     
     const parPobednik = document.createElement('p')
     parPobednik.textContent = obj.ime + ': ' + obj.vrsta + ', ' + obj.sposobnost + ', ' + obj.karakteristike.napad + ' ' + obj.karakteristike.odbrana + ' ' + obj.karakteristike.brzina
@@ -77,38 +85,32 @@ button2.addEventListener('click', () =>{
     
     pokemonPobednik.append(parPobednik,pictureWinner)
     wrapperElement.append(pokemonPobednik)
-})
-let obj = {}
-pokemoni.map(el => {
-    
-    let jacina = 0
 
-    if(el.karakteristike.napad > jacina){
-        jacina = el.karakteristike.napad
-        obj = el
-        
-    }
+button2.addEventListener('click', () =>{
+    pokemonPobednik.classList.toggle('bez-prikaza')
 })
-
 
 //------------------- PRIKAZ ------------------------------------------
 
-button.addEventListener('click', (e) =>{
-    pokemoni.forEach(pokemon => {
-        const pokemonDiv = document.createElement('div')
-        pokemonDiv.className =  '.prikaz-pobednik'
+pokemoni.forEach(pokemon => {
+    const pokemonDiv = document.createElement('div')
+    pokemonDiv.className =  'bez-prikaza'
+
+    const par = document.createElement('p')
+    const picture = document.createElement('img')
     
-        const par = document.createElement('p')
-        const picture = document.createElement('img')
+    par.textContent = pokemon.ime + ': ' + pokemon.vrsta + ', ' + pokemon.sposobnost + ', ' + pokemon.karakteristike.napad + ' ' + pokemon.karakteristike.odbrana + ' ' + pokemon.karakteristike.brzina
+    picture.src = pokemon.slika
+
+    button.addEventListener('click', (e) =>{
+        pokemonDiv.classList.toggle('bez-prikaza')
         
-        par.textContent = pokemon.ime + ': ' + pokemon.vrsta + ', ' + pokemon.sposobnost + ', ' + pokemon.karakteristike.napad + ' ' + pokemon.karakteristike.odbrana + ' ' + pokemon.karakteristike.brzina
-        picture.src = pokemon.slika
-        
-        wrapperElement.append(pokemonDiv)
-        pokemonDiv.append(par, picture)
-        
-    });
-})
+    })
+    wrapperElement.append(pokemonDiv)
+    pokemonDiv.append(par, picture) 
+});
+
+
 
 
 

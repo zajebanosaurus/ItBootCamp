@@ -19,7 +19,7 @@ orderButtons.forEach(orderButton => {
         counter.textContent++
     })
 
-    app.append(button)  
+    app.append(button)
 })
 
 orderNow.forEach(orderButton => {
