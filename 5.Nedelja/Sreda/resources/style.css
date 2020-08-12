@@ -1,0 +1,9 @@
+.prikaz-pokemoni{
+    display: block;
+}
+.prikaz-pobednik{
+    display: block;
+}
+.bez-prikaza{
+    display: none;
+}
