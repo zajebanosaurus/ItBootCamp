@@ -60,16 +60,13 @@ class Profesor extends Nastavnik {
         
     }
     ispis(){
-        console.log(` Profesor:\n 
+        console.log(` \nProfesor:\n 
         Ime i prezime: ${this.ime} ${this.prezime},\n 
         Plata: ${this.plata},\n 
         Godina zaposlenja: ${this.godinaZaposlenja},\n 
         Omiljeni predmet: ${this.omiljeniPredmet},\n 
         Lista predmeta: ${this.listaPredmeta},\n 
         Titula: ${this.titula}`)
-    }
-    set titule(value){
-        this.titula
     }
 }
 let titula = ['docent', ' vanredni', ' redovni']
@@ -80,7 +77,7 @@ class Asistent extends Nastavnik {
         this.smerStudija = smerStudija
     }
     ispis(){
-        console.log(` Asistent:\n 
+        console.log(` \nAsistent:\n 
         Ime i prezime: ${this.ime} ${this.prezime},\n 
         Plata: ${this.plata},\n 
         Godina zaposlenja: ${this.godinaZaposlenja},\n 
@@ -96,7 +93,7 @@ class Sluzbenik extends Zaposleni {
         this.odsek = odsek
     }
     ispis() {
-        console.log(`Službenik:\n 
+        console.log(` \nSlužbenik:\n 
         Ime i prezime: ${this.ime}\n
         Godine: ${this.god}\n 
         Godina zaposlenja: ${this.godinaZaposlenja}\n
