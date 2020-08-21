@@ -3,10 +3,9 @@ body {
     height: 100vh;
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
-
 }
 .current-status {
-    height: 40vh;
+    height: 380px;
     background-color: #A9AABC;
     text-align: center;
 }
@@ -16,28 +15,46 @@ body {
     font-size: 20px;
     color: rgb(255, 255, 255);
 }
-.subtraction {
+.subtraction p{
+    height: 100px;
     font-size: 70px;
     color: white;
 }
 #sum-income {
+    height: 10px;
     text-align: left;
-    padding: 20px 95px 20px 20px;
-    margin: 50px 35% 20px 35%;
+    padding: 20px 100px 30px 30px;
+    margin: 10px 35%;
     background-color: #2AB9B7;
 }
 #sum-expenses {
+    height: 10px;
     text-align: left;
-    padding: 20px;
-    margin:0px 35%;
+    padding: 20px 100px 30px 30px;
+    margin:10px 35%;
     background-color: #FF4F4B;
+}
+#percent-block{
+    position: relative;
+    width: 70px;
+    top: -57px;
+    left: 59.7vw;
+    background-color: #F57B66;
+    padding: 5px;
+    border-radius: 5px;
+    margin-left: 5px;
+    color:white;
+}
+#percent {
+    background-color: #F57B66;
+    padding: 5px;
+    border-radius: 5px;
+    margin-left: 5px;
+    color:white;
 }
 .input {
     text-align: center;
-    padding: 15px;
-    background-color: #F7F7F7;
-    
-    
+    background-color: #F7F7F7;   
 }
 input[type=text], select{
     padding: 20px;
@@ -48,28 +65,30 @@ input[type=text], select{
     border: 0px;
 }
 .btn{
-    padding: 30px;
-    font-size: 20px;
+    width: 30px;
+    padding: 10px;
     border: none;
+    outline:none;
+    border-radius: 50%;
 }
 .icon {
     position: relative;
     top: 15px;
-    left: -50px;
+    left: -40px;
     pointer-events: none;
     color: black
 }
 #icon-green {
     position: relative;
     top: 15px;
-    left: -50px;
+    left: -40px;
     pointer-events: none;
     color: #2AB9B7;
 }
 #icon-red {
     position: relative;
     top: 15px;
-    left: -50px;
+    left: -40px;
     pointer-events: none;
     color: #FF4F4B;
 }
@@ -101,13 +120,6 @@ input[type=text], select{
     border-bottom: 1px solid rgb(195, 195, 195);
     font-size: 20px;
     padding: 20px 0;
-}
-#percent {
-    background-color: #F57B66;
-    padding: 5px;
-    border-radius: 5px;
-    margin-left: 5px;
-    color:white;
 }
 .delete-button {
     display:none;

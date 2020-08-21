@@ -5,6 +5,7 @@ let percentage
 
 const calculate = (input) => {
     input.forEach(el => {
+       
         if(el.status === 'Prihodi'){
             sumOfIncome += +el.amount
            return sumOfIncome
@@ -23,4 +24,4 @@ const reset = () => {
     sumOfExprenses = 0
 }
 
-export {sumOfIncome, sumOfExprenses, calculate, sub, reset, percentage}
+export { sumOfIncome, sumOfExprenses, sub, percentage, calculate, reset }

@@ -1,5 +1,5 @@
 import { budgetPrint } from './budget-print.js'
-import { calculate, sumOfIncome, reset} from './budget-calculator.js'
+import { calculate, reset } from './budget-calculator.js'
 import { sumPrint } from './budget-print-sum.js'
 
 const inputSelect = document.querySelector('#select-feild')
@@ -9,6 +9,7 @@ const submitButton = document.querySelector('.btn')
 const icon = document.querySelector('.icon')
 
 let input = []
+let count = 0
 
 submitButton.addEventListener ('click', (e) =>{
     e.preventDefault()
@@ -18,6 +19,7 @@ submitButton.addEventListener ('click', (e) =>{
                                 && inputAmount.value.trim() > 0 
                                 && !isNaN(inputAmount.value.trim())){
         input.push({
+            id : count +=1,
             status : inputSelect.value,
             discription : inputDiscription.value,
             amount : inputAmount.value
@@ -25,7 +27,7 @@ submitButton.addEventListener ('click', (e) =>{
         calculate(input)
         budgetPrint(input)
         sumPrint()
-        reset(sumOfIncome)
+        reset()
         icon.id = 'icon-green'
     }
     else{
@@ -40,5 +42,5 @@ submitButton.addEventListener ('click', (e) =>{
     inputAmount.value = ''
 })
 
-export {inputSelect, inputDiscription, inputAmount, submitButton, input}
+export {inputSelect, inputDiscription, inputAmount, submitButton, input, count}
 
