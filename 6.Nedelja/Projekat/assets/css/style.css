@@ -1,8 +1,8 @@
 body {
     width: 100vw;
-    height: 100vh;
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
 }
 .current-status {
     height: 380px;
@@ -15,42 +15,59 @@ body {
     font-size: 20px;
     color: rgb(255, 255, 255);
 }
-.subtraction p{
+#subtraction {
     height: 100px;
     font-size: 70px;
     color: white;
 }
-#sum-income {
-    height: 10px;
+#sum-income{
+    display: inline-block;
+    margin-top: 20px;
+    width: 500px;
+    height: 60px;
     text-align: left;
-    padding: 20px 100px 30px 30px;
-    margin: 10px 35%;
+    padding: 10px;
     background-color: #2AB9B7;
 }
+#sum-income p:first-child{
+  text-align: left;
+}
+.right {
+    position: relative;
+    bottom: 65px;
+    right: 90px;
+    float: right;
+}
 #sum-expenses {
-    height: 10px;
+    display: inline-block;
+    margin-top: 20px;
+    width: 500px;
+    height: 60px;
     text-align: left;
-    padding: 20px 100px 30px 30px;
-    margin:10px 35%;
+    padding: 10px;
     background-color: #FF4F4B;
 }
 #percent-block{
     position: relative;
     width: 70px;
-    top: -57px;
-    left: 59.7vw;
     background-color: #F57B66;
     padding: 5px;
     border-radius: 5px;
     margin-left: 5px;
     color:white;
+    text-align: center;
 }
 #percent {
+    position: relative;
+    bottom: 50px;
+    left: 410px;
+    width: 70px;
     background-color: #F57B66;
     padding: 5px;
     border-radius: 5px;
     margin-left: 5px;
     color:white;
+    text-align: center;
 }
 .input {
     text-align: center;
@@ -129,5 +146,6 @@ input[type=text], select{
 .delete-button-show {
     float: left;
     margin-right: 10px;
+    border-radius: 30%;
 }
 
