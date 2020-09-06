@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import ReactDOM from 'react-dom';
 import Form from './components/Form';
+import Card from './components/Card';
 
 
 const App = () =>{
@@ -21,6 +22,7 @@ const App = () =>{
       <Form text={change} input={input} />
       <p>Write: {inputPar}</p>
       <p>{par}</p>
+      <Card url="https://i.pinimg.com/originals/cc/6a/92/cc6a920bdc9893ef5ade08f018d73d66.png" text="Scary emoji"/>
 
     </div>
   )
