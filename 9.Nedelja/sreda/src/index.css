@@ -7,9 +7,10 @@ body {
   -moz-osx-font-smoothing: grayscale;
   width: 100vw;
   text-align: center;
+  background-image: url('https://unionstreetmedia.com/wp-content/uploads/2016/05/9733278939_43e2ed5579_o.jpg');
+  
   
 }
-
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
@@ -23,11 +24,21 @@ code {
   font-size: 20px;
   padding: 10px;
   text-decoration: none;
-  border: 1px solid black;
+  border: 1px solid rgb(146, 145, 145);
   border-radius: 10px;
-  color: black
+  color: black;
+  background-color: rgba(214, 214, 214, 0.664);
+}
+.nav-link:hover {
+  background-color: rgb(219, 172, 172);
 }
 .users {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 300px;
+  margin-left: 42%;
   padding: 10px;
   text-align: center;
+  background-color: rgba(214, 214, 214, 0.87);
+  border-radius: 20px;
 }
